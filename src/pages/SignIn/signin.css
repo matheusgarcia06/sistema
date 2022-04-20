@@ -83,13 +83,11 @@ form button {
 }
 
 form button:hover {
-    background:#32374a;
+    background:#25272e;
 }
 
 .login a {
     margin: 1.5em 0;
     color: #000;
     cursor: pointer;
-
-
 }
