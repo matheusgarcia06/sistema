@@ -4,6 +4,7 @@ import './dashboard.css';
 
 import Header from '../../components/Header';
 import Title from '../../components/Title';
+import Modal from '../../components/Modal';
 
 import { FiMessageSquare, FiPlus, FiSearch, FiEdit2 } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
@@ -23,26 +24,28 @@ export default function Dashboard() {
 	const [isEmpty, setIsEmpty] = useState(false);
 	const [lastDocs, setLastDocs] = useState();
 
+	const [showPostModal, setShowPostModal] = useState(false);
+	const [detail, setDetail] = useState();
+
 	useEffect(() => {
+		async function loadChamados() {
+			await listRef
+				.limit(5)
+				.get()
+				.then((snapshot) => {
+					updateState(snapshot);
+				})
+				.catch((error) => {
+					console.log('Deu algum erro: ', error);
+					setLoadingMore(false);
+				});
+
+			setLoading(false);
+		}
 		loadChamados();
 
 		return () => {};
 	}, []);
-
-	async function loadChamados() {
-		await listRef
-			.limit(5)
-			.get()
-			.then((snapshot) => {
-				updateState(snapshot);
-			})
-			.catch((error) => {
-				console.log('Deu algum erro: ', error);
-				setLoadingMore(false);
-			});
-
-		setLoading(false);
-	}
 
 	async function updateState(snapshot) {
 		const isCollectionEmpty = snapshot.size === 0;
@@ -83,6 +86,11 @@ export default function Dashboard() {
 			.then((snapshot) => {
 				updateState(snapshot);
 			});
+	}
+
+	function togglePostModal(item) {
+		setShowPostModal(!showPostModal);
+		setDetail(item);
 	}
 
 	if (loading) {
@@ -160,6 +168,7 @@ export default function Dashboard() {
 												<button
 													className='action'
 													style={{ backgroundColor: '#3583f6' }}
+													onClick={() => togglePostModal(item)}
 												>
 													<FiSearch color='#FFF' size={17} />
 												</button>
@@ -189,6 +198,8 @@ export default function Dashboard() {
 					</>
 				)}
 			</div>
+
+			{showPostModal && <Modal conteudo={detail} close={togglePostModal} />}
 		</div>
 	);
 }
