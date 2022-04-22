@@ -9,16 +9,19 @@
 }
 
 .sidebar div {
-    background: url('../../assets/cover.png');
-    background-color: #1B2029;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #DDD;
+    position: relative;
+    border-radius: 50%;
     height: 150px;
-    padding-top: 30px;
+    padding-top: 5px;
+    position: center;
+    width: 100px;
+    height: 100px;
+    margin: 20px 0 10px 50px;
 }
 
 .sidebar div img {
+    position: relative;
     border-radius: 50%;
     display: block;
     margin: auto;
@@ -26,8 +29,7 @@
     height: 90px;
     -webkit-filter: drop-shadow(2px 3px 6px #121212);
     filter: drop-shadow(2px 3px 6px #121212);
-    object-fit: cover;
-    margin-bottom: px;
+    object-fit: cover;  
 }
 
 .sidebar a {

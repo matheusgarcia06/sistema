@@ -1,0 +1,22 @@
+form input[type='radio'] {
+    margin: 15px 0;
+}
+
+form input[type='radio']:not(:first-child) {
+    margin-left: 15px;
+}
+
+.status span{
+    padding-left: .5em;
+    font-size: 14px;
+}
+
+form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.complemento {
+ margin-top: 6px;
+}
+
