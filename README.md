@@ -39,7 +39,7 @@ Um projeto de controle de abertura de chamados para dar suporte, onde temos um D
 - Context API (compartilhamento de estado entre vários componentes da aplicação, utiliza o hook useContext());
 - Toastify (biblioteca do React permite adicionar notificações no aplicativo).
 
-## Front end
+## Back end
 - FireBase.
 
 # Autor
