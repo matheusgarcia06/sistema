@@ -6,7 +6,7 @@
 
 ### Link do Projeto: https://workflow-mu.vercel.app/
 
-O WorkFlow é uma aplicação de controle de abertura de chamados de suporte, onde temos um dashboard de gerenciamento das aberturas, como está o andamento de cada chamado em aberto e editar. Com isso, temos o gerenciamento de cada processo finalizando e backlogs. 
+O WorkFlow é uma aplicação de controle de abertura de chamados de suporte, onde temos um dashboard de gerenciamento das aberturas, como está o andamento de cada chamado em aberto e editar. Com isso, temos o gerenciamento de cada processo finalizado e acompanhamento dos backlogs.
 
 # Layout 🏷️
 
