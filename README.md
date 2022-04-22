@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# WorkFlow
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/matheusgarcia06/sistema/blob/master/LICENSE) 
 
-## Available Scripts
+# Sobre o projeto 💻
 
-In the project directory, you can run:
+### Link do Projeto: https://workflow-mu.vercel.app/
 
-### `yarn start`
+O WorkFlow é uma aplicação de controle de abertura de chamados de suporte, onde temos um dashboard de gerenciamento das aberturas, como está o andamento de cada chamado em aberto e editar. Com isso, temos o gerenciamento de cada processo finalizando e backlogs. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Layout 🏷️
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Layout web
+![Web 1](https://github.com/matheusgarcia06/sistema/blob/master/src/assets/homepc.png)
 
-### `yarn test`
+![Web 2](https://github.com/matheusgarcia06/sistema/blob/master/src/assets/dashboardpc.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Web 3](https://github.com/matheusgarcia06/sistema/blob/master/src/assets/newpc.png)
 
-### `yarn build`
+![Web 4](https://github.com/matheusgarcia06/sistema/blob/master/src/assets/modalpc.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Layout mobile
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Web 1](https://github.com/matheusgarcia06/sistema/blob/master/src/assets/newmobile.jpeg)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Web 2](https://github.com/matheusgarcia06/sistema/blob/master/src/assets/dashboardmobile.jpeg)
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Tecnologias utilizadas 🚀
+## Front end
+- ReactJS;
+- JavaScript;
+- HTML/CSS;
+- React-router-dom;
+- useState 
+- useEfect 
+- useHistory;
+- useParams;
+- Context API (compartilhamento de estado entre vários componentes da aplicação, utiliza o hook useContext());
+- Toastify (biblioteca do React permite adicionar notificações no aplicativo).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Front end
+- FireBase.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Autor
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Matheus Garcia Nogueira
 
-## Learn More
+https://www.linkedin.com/in/matheusgarcianogueira/
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
