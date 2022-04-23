@@ -102,6 +102,7 @@ table td .action svg {
 }
 
 .btn-more:hover {
+    background:#25272e;
     transform: scale(1.1);
 }
 
