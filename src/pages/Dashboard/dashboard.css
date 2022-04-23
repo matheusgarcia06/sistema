@@ -97,11 +97,12 @@ table td .action svg {
     background-color: #181c2e;
     color: #fff;
     font-size: 1.1em;
+
     transition: all .3s ease-in-out;
 }
 
 .btn-more:hover {
-    background:#25272e;
+    transform: scale(1.1);
 }
 
 @media screen and (max-width: 600px) {
